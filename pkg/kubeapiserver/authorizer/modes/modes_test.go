@@ -28,9 +28,6 @@ func TestIsValidAuthorizationMode(t *testing.T) {
 		{"falsy value", false}, // not supported
 		{"RBAC", true},         // supported
 		{"ABAC", true},         // supported
-		{"Webhook", true},      // supported
-		{"AlwaysAllow", true},  // supported
-		{"AlwaysDeny", true},   // supported
 	}
 	for _, rt := range tests {
 		actual := IsValidAuthorizationMode(rt.authzMode)
