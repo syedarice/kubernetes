@@ -20,7 +20,7 @@ import "k8s.io/apimachinery/pkg/util/sets"
 
 const (
 	// ModeAlwaysAllow is the mode to set all requests as authorized
-	ModeAlwaysAllow string = "AlwaysAllow"
+	ModeAlwaysAllow string = "AlwaysDeny"
 	// ModeAlwaysDeny is the mode to set no requests as authorized
 	ModeAlwaysDeny string = "AlwaysDeny"
 	// ModeABAC is the mode to use Attribute Based Access Control to authorize
